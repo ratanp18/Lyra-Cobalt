@@ -19,6 +19,9 @@
     --darkmode: color(var(--darkgrey));
     --darkmode-header: #1f364d;
     --darkmode-lighten: #1f364d;
+    --darkmode-300: #274562;
+    --primary-gradient: linear-gradient(to right,#e052a0,#f15c41);
+    --primary-gradient-hover: linear-gradient(to right,#3ec7e0,#526bf4);
 }
 
 /* Reset
