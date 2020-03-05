@@ -288,7 +288,8 @@ body {
     right: 0;
     left: 0;
     z-index: 1000;
-    background: color(var(--darkgrey) l(-5%));
+    /* background: color(var(--darkgrey) l(-5%)); */
+    background: color(var(--darkmode-header));
 }
 
 .site-nav {
@@ -430,7 +431,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     right: 100%;
     bottom: 8px;
     left: 12px;
-    height: 1px;
+    height: 2px;
     background: #fff;
     opacity: 0.25;
     transition: all 0.35s ease-in-out;
@@ -3650,7 +3651,8 @@ form[data-members-form].error .message-error {
     }
 
     .post-full-title {
-        color: rgba(255, 255, 255, 0.9);
+        /* color: rgba(255, 255, 255, 0.9); */
+        color: #fff;
     }
 
     .post-full-custom-excerpt {
@@ -3662,7 +3664,8 @@ form[data-members-form].error .message-error {
     }
 
     .post-full-byline {
-        border-top-color: color(var(--darkmode) l(+15%));
+        /* border-top-color: color(var(--darkmode) l(+15%)); */
+        border-top: 3px dotted color(var(--darkmode-lighten));
     }
 
     .post-full-byline-meta h4 a {
