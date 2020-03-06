@@ -290,6 +290,7 @@ body {
     z-index: 1000;
     /* background: color(var(--darkgrey) l(-5%)); */
     background: color(var(--darkmode-header));
+    border-bottom: 3px solid var(--header-bottom-color);
 }
 
 .site-nav {
@@ -715,7 +716,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .post-card-primary-tag {
     color: var(--blue);
-    font-size: 1.2rem;
+    font-size: 1.375rem;
+    /* font-size: 1.2rem; */
     font-weight: 500;
     letter-spacing: 0.2px;
     text-transform: uppercase;
@@ -1036,7 +1038,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-custom-excerpt {
     margin: 20px 0 0;
     color: var(--midgrey);
-    font-family: Georgia, serif;
+    /* font-family: Georgia, serif; */
     font-size: 2.3rem;
     line-height: 1.4em;
     font-weight: 300;
@@ -1662,7 +1664,7 @@ Usage (In Ghost editor):
 
 .author-card .author-info p {
     margin: 4px 0 0;
-    color: color(var(--midgrey) l(-10%));
+    /* color: color(var(--midgrey) l(-10%)); */
 }
 
 .author-card .author-info .bio h2 {
@@ -2871,9 +2873,9 @@ Usage (In Ghost editor):
     color: #fff;
     /* background: color(var(--darkgrey) l(-5%)); */
     background: var(--footer-bg);
-    border-top: 2px solid var(--footer-border-color);
-    border-image-slice: 1;
-    border-image-source: var(--primary-gradient);
+    border-top: 3px solid var(--footer-border-color);
+    /* border-image-slice: 1;
+    border-image-source: var(--primary-gradient); */
 }
 
 .site-footer-content {
@@ -3539,9 +3541,12 @@ form[data-members-form].error .message-error {
     display: inline-block;
     margin: 0 8px 1px 0;
     padding: 1px 5px;
-    border: var(--lightgrey) 1px solid;
-    color: var(--midgrey);
-    font-size: 1.2rem;
+    /* border: var(--lightgrey) 1px solid; */
+    /* color: var(--midgrey); */
+    color: #fff;
+    background: var(--darkmode-visibility-bd);
+    /* font-size: 1.2rem; */
+    font-size: 1.375rem;
     line-height: 1.4em;
     border-radius: 4px;
 }
@@ -3631,7 +3636,8 @@ form[data-members-form].error .message-error {
     }
 
     .site-header-background:before {
-        background: rgba(0,0,0,0.6);
+        /* background: rgba(0,0,0,0.6); */
+        background: rgba(14, 36, 57, 0.57);
     }
 
     .post-feed {
@@ -3648,9 +3654,9 @@ form[data-members-form].error .message-error {
         border-bottom-color: var(--darkmode-border-color);
     }
 
-    .post-visibility {
+    /* .post-visibility {
         color: var(--lightgrey);
-    }
+    } */
 
     .author-profile-image {
         background: color(var(--darkmode) l(+5%));
@@ -3686,6 +3692,7 @@ form[data-members-form].error .message-error {
     .post-template .site-main,
     .page-template .site-main {
         background: var(--darkmode);
+        border-top: 3px solid #162d43;
     }
 
     .post-full-content {

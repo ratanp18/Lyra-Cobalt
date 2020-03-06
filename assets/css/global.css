@@ -16,29 +16,40 @@
     --pink: #fa3a57;
     --brown: #a3821a;
     /* --darkmode: color(var(--darkgrey) l(+2%)); */
+
+    /* godo Class */
+    --gradient-blue: linear-gradient(to right,#3ec7e0,#526bf4);
+    --gradient-orange: linear-gradient(79deg,#c09, #f42 85%);
+
     --darkmode: color(var(--darkgrey));
     --darkmode-400: #1f364d;
-    --darkmode-header: var(--darkmode-400);
+    --darkmode-380: #274562;
+
     --darkmode-border-color: var(--darkmode-400);
+
+    /* Header */
+    --darkmode-header: var(--darkmode-400);
+    --header-bottom-color: var(--darkmode-380);
 
     /* button */
     --organge: #f42;
-    --primary-gradient: linear-gradient(79deg,#c09, #f42 85%);
-    --primary-gradient-hover: linear-gradient(to right,#3ec7e0,#526bf4);
-    --darkmode-button-line: #274562;
+    --primary-gradient: var(--gradient-blue);
+    --primary-gradient-hover: var(--gradient-orange);
+    --darkmode-button-line: var(--darkmode-380);
 
     /* card */
     --darkmode-story-bg: #162d43;
     --darkmode-story-color: #9cb3c9;
-    --darkmode-story-bg-hover: #1f364d;
+    --darkmode-story-bg-hover: var(--darkmode-400);
     --darkmode-story-shadown: #0b1c2d;
+    --darkmode-visibility-bd: var(--gradient-orange);
 
     /* Footer */
-    --footer-border-color: var(--organge);
-    --footer-bg:#162d43;
+    --footer-border-color: var(--darkmode-380);
+    --footer-bg: var(--darkmode-400);
 
     /* Read next */
-    --read-next-border-top-color: #1f364d;
+    --read-next-border-top-color: var(--darkmode-400);
     --read-next-card-bg-gradient: linear-gradient(#162d43, var(--darkgrey));
 
     /* --organge: #f15c41; */
