@@ -3922,3 +3922,116 @@ form[data-members-form].error .message-error {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+/* Archive Page Contact
+----------------------------------------------------------------------------- */
+
+.row {
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    margin-left: -16px;
+    margin-right: -16px;
+    flex-direction: row;
+    display: flex;
+    min-width: 100%;
+}
+
+.row .col {
+    flex: 0 0 auto;
+    flex-basis: auto;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.row .col.s12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 800px) {
+    .row .col.m6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .row .col.l4 {
+        flex-basis: 33.33333%;
+        max-width: 33.33333%;
+    }
+}
+
+.u-marginBottom30 { margin-bottom: 30px;}
+.u-textAlignCenter { text-align: center; }
+.u-marginBottom40 { margin-bottom: 40px; }
+
+
+.page-contact .post-full-content { padding: 0 20px 20px;}
+.page-contact form { max-width: 700px; }
+.page-contact-title { font-size: 2.5rem; }
+
+.page-contact-excerpt {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+textarea {
+    min-height: 160px;
+    padding: 15px 10px;
+    width: 100%;
+    color: #0e2439;
+    outline: none;
+    border: 1px solid #c5d2d9;
+}
+
+textarea:focus {
+    border-color: #3eb0ef;
+}
+
+.pae-icon svg {
+    width: 64px;
+    height: 64px;
+}
+
+.pae p { margin-bottom: 0; }
+
+.archive-contact-maps { min-width: 100%; }
+
+.video-responsive {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding: 0 0 56.25%;
+    position: relative;
+    width: 100%;
+}
+
+.video-responsive iframe {
+    border: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* .page-title {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    font-weight: 500
+} */
+
+
+.archive-contact-maps::before {
+  height: 50px;
+  width: 2px;
+  background: #ccc;
+  content: '';
+  display: inline-block;
+  margin-bottom: 90px;
+}
