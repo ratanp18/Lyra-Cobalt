@@ -668,6 +668,12 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     min-height: 220px;
     border-bottom: 1px solid color(var(--lightgrey) l(+12%));
     background-size: cover;
+    transition: background-color 140ms;
+}
+
+/* add for me */
+.post-card:hover .post-card-content {
+    background-color: var(--darkmode-story-bg-hover);
 }
 
 .post-card-image-link {
@@ -729,16 +735,20 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    background-color: var(--darkmode-story-bg);
+    box-shadow: 0 0 10px var(--darkmode-story-shadown);
 }
 
 .post-card-excerpt {
     max-width: 56em;
     color: var(--midgrey);
-    font-family: Georgia, serif;
+    /* font-family: Georgia, serif; */
 }
 
 .post-card-excerpt p {
     margin-bottom: 1em;
+    font-size: 1.8rem;
 }
 
 .post-card-meta {
@@ -922,7 +932,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 
     .post-card-large .post-card-content-link {
-        padding: 0 0 0 40px;
+        padding: 0 0 0 20px;
     }
 
     .post-card-large .post-card-meta {
@@ -1059,7 +1069,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin: 0 auto;
     padding: 0 170px 5vw;
     min-height: 230px;
-    font-family: Georgia, serif;
+    /* font-family: Georgia, serif; */
     font-size: 2.0rem;
     line-height: 1.6em;
     background: #fff;
@@ -1209,7 +1219,8 @@ Usage (In Ghost editor):
 .post-full-content blockquote {
     margin: 0 0 1.5em;
     padding: 0 1.5em;
-    border-left: #3eb0ef 3px solid;
+    /* border-left: #3eb0ef 3px solid; */
+    border-left: 6px solid #2f4a65;
 }
 @media (max-width: 500px) {
     .post-full-content blockquote {
@@ -1927,7 +1938,7 @@ Usage (In Ghost editor):
 
 .read-next .post-card-title {
     color: #fff;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     transition: all 0.2s ease-in-out;
 }
 
@@ -1935,9 +1946,9 @@ Usage (In Ghost editor):
     opacity: 1.0;
 }
 
-.read-next .post-card-excerpt {
+/* .read-next .post-card-excerpt {
     color: rgba(255, 255, 255, 0.6);
-}
+} */
 
 .read-next .static-avatar {
     border-color: #000;
@@ -2958,7 +2969,7 @@ textarea:focus {
 }
 
 .button.line:not(:hover) {
-    box-shadow: inset 0 0 0 2px var(--darkmode-300);
+    box-shadow: inset 0 0 0 2px var(--darkmode-button-line);
 }
 
 .button.small {
@@ -3594,7 +3605,8 @@ form[data-members-form].error .message-error {
 /* ---------------------------------------------------------- */
 @media (prefers-color-scheme: dark) {
     body {
-        color: rgba(255, 255, 255, 0.80);
+        /* color: rgba(255, 255, 255, 0.80); */
+        color: #9cb3c9;
         background: var(--darkmode);
     }
 
@@ -3619,9 +3631,14 @@ form[data-members-form].error .message-error {
         background: var(--darkmode);
     }
 
+    .post-card-image-link {
+        background-color: var(--darkmode-story-bg);
+    }
+
     .post-card,
     .post-card:hover {
-        border-bottom-color: color(var(--darkmode) l(+8%));
+        /* border-bottom-color: color(var(--darkmode) l(+8%)); */
+        border-bottom-color: var(--darkmode-border-color);
     }
 
     .post-visibility {
@@ -3645,11 +3662,12 @@ form[data-members-form].error .message-error {
     }
 
     .post-card-title {
-        color: rgba(255, 255, 255, 0.85);
+        color: #fff;
     }
 
     .post-card-excerpt {
-        color: color(var(--midgrey) l(+10%));
+        /* color: color(var(--midgrey) l(+10%)); */
+        color: var(--darkmode-story-color);
     }
 
     .author-avatar,
@@ -3682,7 +3700,7 @@ form[data-members-form].error .message-error {
 
     .post-full-byline {
         /* border-top-color: color(var(--darkmode) l(+15%)); */
-        border-top: 3px dotted color(var(--darkmode-lighten));
+        border-top: 3px dotted color(var(--darkmode-border-color));
     }
 
     .post-full-byline-meta h4 a {
@@ -3720,7 +3738,8 @@ form[data-members-form].error .message-error {
     }
 
     .post-full-content strong {
-        color: #fff;
+        color: #bdccdb;
+        font-weight: 600;
     }
 
     .post-full-content em {
