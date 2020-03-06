@@ -1911,8 +1911,9 @@ Usage (In Ghost editor):
 /* ---------------------------------------------------------- */
 
 .read-next {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    background: color(var(--darkgrey) l(-5%));
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+    /* background: color(var(--darkgrey) l(-5%)); */
+    border-top: 2px solid var(--read-next-border-top-color);
 }
 
 .read-next-feed {
@@ -1951,7 +1952,8 @@ Usage (In Ghost editor):
 } */
 
 .read-next .static-avatar {
-    border-color: #000;
+    /* border-color: #000; */
+    border-color: var(--darkmode-button-line);
 }
 
 .read-next .post-card-byline-content {
@@ -1970,7 +1972,8 @@ Usage (In Ghost editor):
     overflow: hidden;
     margin: 0 25px 50px;
     padding: 25px;
-    background: linear-gradient(color(var(--darkgrey) l(+2%)), color(var(--darkgrey) l(-5%)));
+    /* background: linear-gradient(color(var(--darkgrey) l(+2%)), color(var(--darkgrey) l(-5%))); */
+    background: var(--read-next-card-bg-gradient);
     border-radius: 3px;
 }
 
@@ -2031,7 +2034,7 @@ Usage (In Ghost editor):
 
 .read-next-card-content h4 {
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1.35em;
     font-weight: 600;
 }
@@ -2072,19 +2075,19 @@ Usage (In Ghost editor):
 }
 
 .read-next-card-footer a {
-    padding: 7px 12px 8px 14px;
+    /* padding: 7px 12px 8px 14px;
     border: 1px solid rgba(255, 255, 255, 0.6);
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.3rem;
+    transition: all 0.35s ease-in-out; */
     border-radius: 999px;
-    transition: all 0.35s ease-in-out;
 }
 
-.read-next-card-footer a:hover {
+/* .read-next-card-footer a:hover {
     border-color: var(--yellow);
     color: var(--yellow);
     text-decoration: none;
-}
+} */
 
 @media (max-width: 1170px) {
     .read-next-card {
@@ -2863,10 +2866,14 @@ Usage (In Ghost editor):
 
 .site-footer {
     position: relative;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 60px;
     color: #fff;
-    background: color(var(--darkgrey) l(-5%));
+    /* background: color(var(--darkgrey) l(-5%)); */
+    background: var(--footer-bg);
+    border-top: 2px solid var(--footer-border-color);
+    border-image-slice: 1;
+    border-image-source: var(--primary-gradient);
 }
 
 .site-footer-content {
