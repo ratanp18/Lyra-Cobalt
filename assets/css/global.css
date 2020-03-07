@@ -42,7 +42,7 @@
     --darkmode-story-color: #9cb3c9;
     --darkmode-story-bg-hover: var(--darkmode-400);
     --darkmode-story-shadown: #0b1c2d;
-    --darkmode-visibility-bd: var(--gradient-orange);
+    --darkmode-visibility-bd: var(--gradient-blue);
 
     /* Footer */
     --footer-border-color: var(--darkmode-380);
