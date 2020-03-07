@@ -720,9 +720,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     color: var(--blue);
     font-size: 1.375rem;
     /* font-size: 1.2rem; */
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.2px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    text-transform: unset;
 }
 
 .post-card-title {
@@ -836,13 +837,14 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex: 1 1 50%;
     display: flex;
     flex-direction: column;
-    margin: 2px 0 0 6px;
+    margin: 0 0 0 6px;
     color: color(var(--midgrey) l(+10%));
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 1.4em;
     font-weight: 400;
     letter-spacing: 0.2px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    text-transform: unset;
 }
 
 .post-card-byline-content span {
@@ -1264,7 +1266,8 @@ Usage (In Ghost editor):
     margin: 1.5em 0 3em;
     padding: 20px;
     max-width: 100%;
-    border: color(var(--darkgrey) l(-10%)) 1px solid;
+    /* border: color(var(--darkgrey) l(-10%)) 1px solid; */
+    border: 1px solid var(--border-color-pre);
     color: var(--whitegrey);
     font-size: 1.4rem;
     line-height: 1.5em;
@@ -1572,19 +1575,25 @@ Usage (In Ghost editor):
 }
 
 .post-full-byline-meta {
-    margin: 2px 0 0;
+    margin: 0;
     color: color(var(--midgrey) l(+10%));
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.2em;
     letter-spacing: 0.2px;
-    text-transform: uppercase;;
+    /* text-transform: uppercase; */
+    text-transform: unset;
 }
 
 .post-full-byline-meta h4 {
     margin: 0 0 3px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 1.4em;
-    font-weight: 500;
+    font-weight: 600;
+}
+
+.byline-meta-content {
+    font-size: 1.3rem;
+    line-height: 1.2;
 }
 
 .post-full-byline-meta h4 a {
