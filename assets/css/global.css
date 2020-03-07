@@ -52,6 +52,9 @@
     --read-next-border-top-color: var(--darkmode-400);
     --read-next-card-bg-gradient: linear-gradient(#162d43, var(--darkgrey));
 
+    /* code pre */
+    --darkmode-code-bg: #1f364d;
+
     /* --organge: #f15c41; */
     /* --primary-gradient: linear-gradient(to right,#e052a0,#f15c41); */
 }

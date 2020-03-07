@@ -3814,7 +3814,8 @@ form[data-members-form].error .message-error {
 
     .post-full-content code {
         color: #fff;
-        background: #000;
+        /* background: #000; */
+        background: var(--darkmode-code-bg);
     }
 
     hr {
@@ -3850,7 +3851,8 @@ form[data-members-form].error .message-error {
 
     .post-full-content .kg-bookmark-container {
         color: rgba(255, 255, 255, 0.75);
-        box-shadow: 0 0 1px rgba(255,255,255,0.9);
+        /* box-shadow: 0 0 1px rgba(255,255,255,0.9); */
+        box-shadow: 0 0 3px #091725;
     }
 
     .kg-bookmark-title {
