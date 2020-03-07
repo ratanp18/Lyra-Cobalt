@@ -2880,13 +2880,61 @@ Usage (In Ghost editor):
     border-image-source: var(--primary-gradient); */
 }
 
+.site-footer .bull {
+    display: inline-block;
+    margin: 0 4px;
+    opacity: .6;
+}
+
+.site-footer .icon--coffe {
+    color: #b06f31;
+    height: 24px;
+    width: 24px;
+    vertical-align: top;
+    animation-duration: 4s;
+}
+
+@keyframes swing {
+    20% {
+      transform: rotate3d(0, 0, 1, 15deg);
+    }
+
+    40% {
+      transform: rotate3d(0, 0, 1, -10deg);
+    }
+
+    60% {
+      transform: rotate3d(0, 0, 1, 5deg);
+    }
+
+    80% {
+      transform: rotate3d(0, 0, 1, -5deg);
+    }
+
+    to {
+      transform: rotate3d(0, 0, 1, 0deg);
+    }
+  }
+
+.swing {
+    transform-origin: top center;
+    animation-name: swing;
+}
+
 .site-footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     color: rgba(255,255,255,0.7);
-    font-size: 1.4rem;
+    /*  */
+    font-size: 1.5rem;
+    letter-spacing: .2px;
+    font-weight: 600;
+}
+
+.site-footer-nav a {
+    margin-left: 5px;
 }
 
 .site-footer-content a {
@@ -2906,15 +2954,16 @@ Usage (In Ghost editor):
     padding: 0;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 740px) {
     .site-footer-content {
         flex-direction: column;
     }
     .site-footer .copyright {
-        display: flex;
+        /* display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
+        margin-bottom: 10px;
     }
 }
 
