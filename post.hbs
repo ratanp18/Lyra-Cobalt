@@ -277,6 +277,18 @@ $(document).ready(function () {
         }, 800);
     });
 
+    // Prism Js
+    function loadScript (src) {
+        var scriptElement = document.createElement('script')
+        scriptElement.src = src
+        scriptElement.defer = true
+        scriptElement.async = true
+        document.body.appendChild(scriptElement)
+    }
+
+    if (document.querySelectorAll('code[class*=language-]').length) {
+      loadScript(prismJs)
+    }
 });
 </script>
 {{/contentFor}}

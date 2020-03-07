@@ -32,6 +32,8 @@ production stylesheet in assets/built/screen.css
 /* ---------------------------------------------------------- */
 @import "global.css";
 
+@import "prismjs.css";
+
 body {
     background: #fff;
 }

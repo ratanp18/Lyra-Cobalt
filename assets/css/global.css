@@ -55,6 +55,11 @@
     /* code pre */
     --darkmode-code-bg: #1f364d;
 
+    /* Prism Cde */
+    --prismjs-whitegrey : #e5eff5;
+    --prismjs-blue :#3eb0ef;
+    --prismjs-darkgrey: #0b1d2d;
+
     /* --organge: #f15c41; */
     /* --primary-gradient: linear-gradient(to right,#e052a0,#f15c41); */
 }
