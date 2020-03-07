@@ -2927,6 +2927,7 @@ input[type="email"],
 input[type="tel"],
 input[type="search"],
 input[type="url"],
+textarea,
 select {
     display: block;
     padding: 0 0.6em;
@@ -3908,8 +3909,11 @@ form[data-members-form].error .message-error {
     input[type="tel"],
     input[type="search"],
     input[type="url"],
+    textarea,
     select {
-        color: var(--darkgrey);
+        /* color: var(--darkgrey); */
+        border: 1px solid var(--darkmode-400);
+        background: var(--darkmode-400);
     }
 }
 
@@ -3926,7 +3930,7 @@ form[data-members-form].error .message-error {
 /* Archive Page Contact
 ----------------------------------------------------------------------------- */
 
-.row {
+/* .row {
     flex-wrap: wrap;
     flex: 0 1 auto;
     margin-left: -16px;
@@ -3961,16 +3965,18 @@ form[data-members-form].error .message-error {
         flex-basis: 33.33333%;
         max-width: 33.33333%;
     }
-}
+} */
 
 .u-marginBottom30 { margin-bottom: 30px;}
-.u-textAlignCenter { text-align: center; }
+/* .u-textAlignCenter { text-align: center; } */
 .u-marginBottom40 { margin-bottom: 40px; }
 
 
-.page-contact .post-full-content { padding: 0 20px 20px;}
-.page-contact form { max-width: 700px; }
+/* .page-contact .post-full-content { padding: 0 20px 20px;} */
+/* .page-contact form { max-width: 700px; } */
 .page-contact-title { font-size: 2.5rem; }
+
+.post-content form { min-width: 100%; }
 
 .page-contact-excerpt {
     font-size: 3.2rem;
@@ -3979,12 +3985,11 @@ form[data-members-form].error .message-error {
 }
 
 textarea {
-    min-height: 160px;
-    padding: 15px 10px;
+    min-height: 200px;
+    padding: 14px 35px;
     width: 100%;
-    color: #0e2439;
     outline: none;
-    border: 1px solid #c5d2d9;
+    /* border: 1px solid #c5d2d9; */
 }
 
 textarea:focus {
