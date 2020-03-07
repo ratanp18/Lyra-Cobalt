@@ -743,6 +743,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 20px;
     background-color: var(--darkmode-story-bg);
     box-shadow: 0 0 10px var(--darkmode-story-shadown);
+    /*  */
+    justify-content: space-between;
 }
 
 .post-card-excerpt {
