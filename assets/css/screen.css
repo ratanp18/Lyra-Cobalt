@@ -2885,7 +2885,7 @@ Usage (In Ghost editor):
     justify-content: space-between;
     align-items: center;
     color: rgba(255,255,255,0.7);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .site-footer-content a {
@@ -4035,3 +4035,32 @@ textarea:focus {
   display: inline-block;
   margin-bottom: 90px;
 }
+
+/* Icons */
+.icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.icon.icon--heart { color: var(--organge); }
+
+/* Animated */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+.pulse { animation-name: pulse; }
+@keyframes pulse {
+    from { transform: scale3d(1, 1, 1); }
+    50% { transform: scale3d(1.2, 1.2, 1.2); }
+    to { transform: scale3d(1, 1, 1); }
+  }
