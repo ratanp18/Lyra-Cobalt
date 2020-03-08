@@ -1987,7 +1987,7 @@ Usage (In Ghost editor):
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin: 0 25px 50px;
+    margin: 0 25px 30px;
     padding: 25px;
     /* background: linear-gradient(color(var(--darkgrey) l(+2%)), color(var(--darkgrey) l(-5%))); */
     background: var(--read-next-card-bg-gradient);
@@ -2005,7 +2005,7 @@ Usage (In Ghost editor):
 .read-next-card-header h3 {
     margin: 0;
     color: rgba(255, 255, 255, 0.6);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1em;
     font-weight: 300;
     letter-spacing: 0.4px;
@@ -2025,6 +2025,7 @@ Usage (In Ghost editor):
 
 .read-next-card-content {
     font-size: 1.7rem;
+    /* flex: 1; */
 }
 
 .read-next-card-content ul {
@@ -2051,7 +2052,7 @@ Usage (In Ghost editor):
 
 .read-next-card-content h4 {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     line-height: 1.35em;
     font-weight: 600;
 }
@@ -2076,7 +2077,7 @@ Usage (In Ghost editor):
 
 .read-next-card-meta {
     margin-top: 2px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.4em;
     font-weight: 400;
 }
@@ -2122,8 +2123,10 @@ Usage (In Ghost editor):
     .read-next-card {
         flex: 1 1 auto;
         margin: 0 25px;
-        padding: 0;
-        background: none;
+        background: var(--darkmode-story-bg);
+        box-shadow: 0 0 10px var(--darkmode-story-shadown);
+        /* padding: 0; */
+        /* background: none; */
     }
 
     .read-next .post-card {
@@ -2893,7 +2896,7 @@ Usage (In Ghost editor):
     border-image-source: var(--primary-gradient); */
 }
 
-.site-footer .bull {
+.bull {
     display: inline-block;
     margin: 0 4px;
     opacity: .6;
