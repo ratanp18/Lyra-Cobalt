@@ -3128,7 +3128,7 @@ textarea:focus {
 .signup-form p small {
     display: inline-block;
     margin: 15px 0 0 0;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .signup-box {
@@ -3136,6 +3136,9 @@ textarea:focus {
     justify-content: space-between;
     align-items: center;
 }
+
+.signin-box input,
+.signup-box input { text-align: center; }
 
 .signup-box .button {
     margin-left: 10px;
@@ -3178,7 +3181,7 @@ textarea:focus {
 .signin-form p small {
     display: inline-block;
     margin: 15px 0 0 0;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .signin-box {
@@ -4056,7 +4059,7 @@ select {
 
 textarea {
     min-height: 200px;
-    padding: 14px 35px;
+    padding: 14px .6em;
     width: 100%;
     outline: none;
     /* border: 1px solid #c5d2d9; */
