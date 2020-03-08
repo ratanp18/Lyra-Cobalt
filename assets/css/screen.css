@@ -3619,10 +3619,10 @@ form[data-members-form].error .message-error {
     border-radius: 4px;
 }
 
-.post-visibility-members,
+/* .post-visibility-members,
 .post-visibility-paid {
     display: none;
-}
+} */
 
 .post-upgrade-cta {
     display: flex;
