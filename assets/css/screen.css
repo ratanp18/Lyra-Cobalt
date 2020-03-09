@@ -654,6 +654,11 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     body.toggle-menu-mobile .site-nav-main {
         display: none;
     }
+
+    body.hide-header .site-nav-main {
+        background: transparent;
+        border-color: transparent;
+    }
 }
 
 
