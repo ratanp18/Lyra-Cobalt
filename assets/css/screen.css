@@ -3135,15 +3135,19 @@ textarea:focus {
 
 .signup-box {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
+    /*  */
+    flex-direction: column;
 }
 
 .signin-box input,
 .signup-box input { text-align: center; }
 
 .signup-box .button {
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    margin-top: 20px;
+    width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -3188,12 +3192,16 @@ textarea:focus {
 
 .signin-box {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
+    /*  */
+    flex-direction: column;
 }
 
 .signin-box .button {
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    margin-top: 20px;
+    width: 100%;
 }
 
 @media (max-width: 600px) {
