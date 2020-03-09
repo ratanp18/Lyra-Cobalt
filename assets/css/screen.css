@@ -643,12 +643,16 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     }
 
     /* Hide menu when scroll site navigation */
-    .site-nav.fixed-nav-active .site-nav-content {
+    /* .site-nav.fixed-nav-active .site-nav-content {
         display: none;
     }
 
     .site-nav.fixed-nav-active .site-nav-left::after {
         display: none !important;
+    } */
+
+    body.toggle-menu-mobile .site-nav-main {
+        display: none;
     }
 }
 
