@@ -641,6 +641,15 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     .site-nav-main .site-nav-right {
         padding: 9px 20px 10px 5px;
     }
+
+    /* Hide menu when scroll site navigation */
+    .site-nav.fixed-nav-active .site-nav-content {
+        display: none;
+    }
+
+    .site-nav.fixed-nav-active .site-nav-left::after {
+        display: none !important;
+    }
 }
 
 
