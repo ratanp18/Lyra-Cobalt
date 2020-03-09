@@ -957,7 +957,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 
     .post-card-large .post-card-meta {
-        padding: 0 0 0 40px;
+        padding: 0 0 0 20px;
     }
 
     .post-card-large .post-card-excerpt p {
@@ -3120,7 +3120,8 @@ textarea:focus {
 }
 
 .signup-form {
-    margin: 0 auto 10vw;
+    /* margin: 0 auto 10vw; */
+    margin: 5rem auto;
     max-width: 500px;
     width: 100%;
     text-align: center;
@@ -3177,7 +3178,8 @@ textarea:focus {
 }
 
 .signin-form {
-    margin: 0 auto 10vw;
+    /* margin: 0 auto 10vw; */
+    margin: 5rem auto;
     max-width: 500px;
     width: 100%;
     text-align: center;
