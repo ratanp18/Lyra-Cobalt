@@ -943,6 +943,8 @@ make sure this only happens on large viewports / desktop-ish devices.
 
     .post-card-large .post-card-content-link {
         padding: 0 0 0 20px;
+        /*  */
+        flex: 1;
     }
 
     .post-card-large .post-card-meta {
