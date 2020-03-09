@@ -633,6 +633,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
         padding-left: 0;
     }
 
+    body.not-fixed-header .site-nav-main {
+        position: relative;
+    }
+
     .site-nav-left {
         margin-right: 0;
         padding-left: 5vw;
@@ -2692,7 +2696,8 @@ Usage (In Ghost editor):
     line-height: 1.3em;
     font-weight: 500;
     text-align: center;
-    background: color(var(--green) l(-5%));
+    /* background: color(var(--green) l(-5%)); */
+    background: var(--gradient-blue);
     transition: all 0.35s cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
     transform: translateY(-175%);
 }
@@ -3400,16 +3405,20 @@ form[data-members-form].error .message-error {
     line-height: 1.5em;
     font-weight: 500;
     text-align: center;
-    background: color(var(--green) l(-5%));
+    /* background: color(var(--green) l(-5%)); */
+    background: var(--gradient-blue);
     border-radius: 5px;
 }
 form[data-members-form].success .message-success {
-    background: color(var(--green) l(-5%));
+    /* background: color(var(--green) l(-5%)); */
+    background: var(--gradient-blue);
 }
 form[data-members-form].error .message-error {
-    color: var(--red);
-    background: #fff;
-    box-shadow: var(--red) 0 0 0 1px;
+    /* color: var(--red); */
+    /* background: #fff; */
+    /* box-shadow: var(--red) 0 0 0 1px; */
+    background: var(--gradient-blue);
+    color: #fff;
 }
 
 form[data-members-form] .button {
@@ -3650,6 +3659,10 @@ form[data-members-form].error .message-error {
     font-size: 1.375rem;
     line-height: 1.4em;
     border-radius: 4px;
+}
+
+.post-visibility.post-visibility-public {
+    background: var(--darkgrey);
 }
 
 /* .post-visibility-members,
