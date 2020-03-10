@@ -3283,10 +3283,11 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    border-top: var(--blue) 6px solid;
-    color: color(var(--midgrey) l(-30%));
+    border-top: color(var(--blue) l(-5%)) 6px solid;
+    /* color: color(var(--midgrey) l(-30%)); */
     text-align: left;
-    background: #fff;
+    /* background: #fff; */
+    background: var(--checkout-bg);
     border-radius: 10px;
     box-shadow: 0 0 0 1px rgba(39,44,49,0.03), 0 0 3px rgba(39,44,49,0.05), 0 5px 22px -10px rgba(39,44,49,0.12), 0 25px 30px -25px rgba(39,44,49,0.05);
 }
@@ -3316,7 +3317,7 @@ textarea:focus {
 
 .checkout-plan-header h3 {
     margin: 0 0 25px 0;
-    color: var(--darkgrey);
+    /* color: var(--darkgrey); */
     font-size: 1.8rem;
     line-height: 1.15em;
     font-weight: 700;
@@ -3330,7 +3331,8 @@ textarea:focus {
 }
 
 .checkout-plan-header strong {
-    color: var(--darkgrey);
+    /* color: var(--darkgrey); */
+    color: #fff;
     font-size: 4.5rem;
     font-weight: 500;
 }
@@ -3360,7 +3362,8 @@ textarea:focus {
     position: absolute;
     left: 0;
     display: block;
-    color: color(var(--green) l(-5%));
+    /* color: color(var(--green) l(-5%)); */
+    color: color(var(--blue) l(-5%));
     font-size: 1.6rem;
     font-weight: 600;
 }

@@ -56,6 +56,9 @@
     /* code pre */
     --darkmode-code-bg: #1f364d;
 
+    /* checkout */
+    --checkout-bg: #162d43;
+
     /* Prism Cde */
     --prismjs-whitegrey : #e5eff5;
     --prismjs-blue :#3eb0ef;
