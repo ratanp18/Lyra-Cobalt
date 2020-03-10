@@ -820,7 +820,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .static-avatar {
     display: block;
     overflow: hidden;
-    margin: 0 0 0 -6px;
+    margin: 2px 0 0 -6px;
     width: 34px;
     height: 34px;
     border: #fff 2px solid;
@@ -964,7 +964,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
     .post-card-large .post-card-title {
         margin-top: 0;
-        font-size: 3.2rem;
+        /* font-size: 3.2rem; */
     }
 
     .post-card-large .post-card-content-link {
