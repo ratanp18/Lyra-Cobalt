@@ -753,6 +753,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     line-height: 1.15em;
     transition: color 0.2s ease-in-out;
     background: linear-gradient(90deg,#0e2439,#274562);
+    border-radius: 4px;
+    padding: 1px 5px;
 }
 
 .no-image .post-card-title {
@@ -936,7 +938,7 @@ make sure this only happens on large viewports / desktop-ish devices.
         flex-direction: row;
         /* padding-bottom: 40px; */
         padding-bottom: 30px;
-        min-height: 300px;
+        min-height: 350px;
         border-top: 0;
     }
 
@@ -952,7 +954,7 @@ make sure this only happens on large viewports / desktop-ish devices.
         position: relative;
         flex: 1 1 auto;
         margin-bottom: 0;
-        min-height: 300px;
+        min-height: 350px;
     }
 
     .post-card-large .post-card-image {
@@ -972,13 +974,13 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 
     .post-card-large .post-card-content-link {
-        padding: 0 0 0 20px;
+        padding: 0 0 0 3px;
         /*  */
         flex: 1;
     }
 
     .post-card-large .post-card-meta {
-        padding: 0 0 0 20px;
+        padding: 0 0 0 3px;
     }
 
     .post-card-large .post-card-excerpt p {
@@ -1160,8 +1162,9 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-content blockquote,
 .post-full-comments,
 .footnotes {
-    margin: 0 0 1.5em 0;
+    /* margin: 0 0 1.5em 0; */
     min-width: 100%;
+    margin: 0 0 2.5em;
 }
 @media (max-width: 500px) {
     .post-full-content p,
@@ -1783,10 +1786,10 @@ Usage (In Ghost editor):
         font-size: 1.2rem;
     }
 
-    .post-full-byline-meta h4 {
+    /* .post-full-byline-meta h4 {
         margin-bottom: 2px;
         font-size: 1.2rem;
-    }
+    } */
 }
 
 
