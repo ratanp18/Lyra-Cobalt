@@ -936,7 +936,7 @@ make sure this only happens on large viewports / desktop-ish devices.
         flex-direction: row;
         /* padding-bottom: 40px; */
         padding-bottom: 30px;
-        min-height: 280px;
+        min-height: 300px;
         border-top: 0;
     }
 
@@ -952,7 +952,7 @@ make sure this only happens on large viewports / desktop-ish devices.
         position: relative;
         flex: 1 1 auto;
         margin-bottom: 0;
-        min-height: 380px;
+        min-height: 300px;
     }
 
     .post-card-large .post-card-image {
@@ -2155,12 +2155,12 @@ Usage (In Ghost editor):
 @media (max-width: 650px) {
     .read-next-feed {
         flex-direction: column;
-        padding: 25px 0 0;
+        padding: 40px 0 0;
     }
 
     .read-next-card {
         flex: 1 1 auto;
-        margin: 0 25px;
+        margin: 0 25px 40px;
         background: var(--darkmode-story-bg);
         box-shadow: 0 0 10px var(--darkmode-story-shadown);
         /* padding: 0; */
@@ -2169,10 +2169,13 @@ Usage (In Ghost editor):
 
     .read-next .post-card {
         flex: 1 1 auto;
-        margin: 25px;
-        padding: 25px 0 0;
+        /* margin: 25px; */
+        padding: 0 0 40px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 0 25px;
     }
+
+    .read-next { margin-top: 25px; }
 }
 
 
