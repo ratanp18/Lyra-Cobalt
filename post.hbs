@@ -163,15 +163,17 @@ into the {body} of the default.hbs template --}}
                             <li>
                                 <h4><a href="{{url}}">{{title}}</a></h4>
                                 <div class="read-next-card-meta">
-                                    <p><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> –
-                                        {{reading_time}}</p>
+                                    <p><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
+                                        <span class="bull">&bull;</span>
+                                        {{reading_time}}
+                                    </p>
                                 </div>
                             </li>
                             {{/foreach}}
                         </ul>
                     </div>
                     <footer class="read-next-card-footer">
-                        <a href="{{#../primary_tag}}{{url}}{{/../primary_tag}}">{{plural meta.pagination.total empty='No posts' singular='% post' plural='See all % posts'}}
+                        <a href="{{#../primary_tag}}{{url}}{{/../primary_tag}}" class="button line small">{{plural meta.pagination.total empty='No posts' singular='% post' plural='See all % posts'}}
                             →</a>
                     </footer>
                 </article>
@@ -277,6 +279,18 @@ $(document).ready(function () {
         }, 800);
     });
 
+    // Prism Js
+    function loadScript (src) {
+        var scriptElement = document.createElement('script')
+        scriptElement.src = src
+        scriptElement.defer = true
+        scriptElement.async = true
+        document.body.appendChild(scriptElement)
+    }
+
+    if (document.querySelectorAll('code[class*=language-]').length) {
+      loadScript(prismJs)
+    }
 });
 </script>
 {{/contentFor}}

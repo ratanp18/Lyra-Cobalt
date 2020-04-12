@@ -8,13 +8,65 @@
     --purple: #ad26b4;
     --yellow: #fecd35;
     --red: #f05230;
-    --darkgrey: #15171A;
+    /* --darkgrey: #15171A; */
+    --darkgrey: #0e2439;
     --midgrey: #738a94;
     --lightgrey: #c5d2d9;
     --whitegrey: #e5eff5;
+
     --pink: #fa3a57;
     --brown: #a3821a;
-    --darkmode: color(var(--darkgrey) l(+2%));
+    /* --darkmode: color(var(--darkgrey) l(+2%)); */
+
+    /* godo Class */
+    --gradient-blue: linear-gradient(to right,#3ec7e0,#526bf4);
+    --gradient-orange: linear-gradient(79deg,#c09, #f42 85%);
+
+    --darkmode: color(var(--darkgrey));
+    --darkmode-400: #1f364d;
+    --darkmode-380: #274562;
+
+    --darkmode-border-color: var(--darkmode-400);
+
+    /* Header */
+    --darkmode-header: var(--darkmode-400);
+    --header-bottom-color: var(--darkmode-380);
+
+    /* button */
+    --organge: #f42;
+    --primary-gradient: var(--gradient-blue);
+    --primary-gradient-hover: var(--gradient-orange);
+    --darkmode-button-line: var(--darkmode-380);
+
+    /* card */
+    --darkmode-story-bg: #162d43;
+    --darkmode-story-color: #9cb3c9;
+    --darkmode-story-bg-hover: var(--darkmode-400);
+    --darkmode-story-shadown: #0b1c2d;
+    --darkmode-visibility-bd: var(--gradient-blue);
+
+    /* Footer */
+    --footer-border-color: var(--darkmode-380);
+    --footer-bg: var(--darkmode-400);
+
+    /* Read next */
+    --read-next-border-top-color: var(--darkmode-400);
+    --read-next-card-bg-gradient: linear-gradient(#162d43, var(--darkgrey));
+
+    /* code pre */
+    --darkmode-code-bg: #1f364d;
+
+    /* checkout */
+    --checkout-bg: #162d43;
+
+    /* Prism Cde */
+    --prismjs-whitegrey : #e5eff5;
+    --prismjs-blue :#3eb0ef;
+    --prismjs-darkgrey: #0b1d2d;
+    --border-color-pre: #0e2439;
+
+    /* --organge: #f15c41; */
+    /* --primary-gradient: linear-gradient(to right,#e052a0,#f15c41); */
 }
 
 /* Reset
@@ -282,7 +334,7 @@ html {
 body {
     overflow-x: hidden;
     color: color(var(--midgrey) l(-30%));
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Source Sans Pro","Helvetica Neue", Helvetica, sans-serif;
     font-size: 1.6rem;
     line-height: 1.6em;
     font-weight: 400;
@@ -296,10 +348,10 @@ body {
     -moz-font-feature-settings: "liga" on;
 }
 
-::selection {
+/* ::selection {
     text-shadow: none;
     background: color(var(--blue) lightness(+30%));
-}
+} */
 
 hr {
     position: relative;
@@ -376,7 +428,7 @@ dt {
     margin: 0 20px 0 0;
     width: 120px;
     color: var(--darkgrey);
-    font-weight: 500;
+    font-weight: 600;
     text-align: right;
 }
 
@@ -460,7 +512,7 @@ h2 {
 h3 {
     margin: 1.5em 0 0.5em 0;
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 @media (max-width: 500px) {
     h3 {
@@ -471,17 +523,17 @@ h3 {
 h4 {
     margin: 1.5em 0 0.5em 0;
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h5 {
     margin: 1.5em 0 0.5em 0;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h6 {
     margin: 1.5em 0 0.5em 0;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 600;
 }

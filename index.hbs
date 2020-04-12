@@ -11,7 +11,7 @@ into the {body} of the default.hbs template --}}
                     {{#if @site.logo}}
                         <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />
                     {{else}}
-                        {{@site.title}}
+                        <span class="gradient-text">{{@site.title}}</span>
                     {{/if}}
                 </h1>
                 <h2 class="site-description">{{@site.description}}</h2>
@@ -49,6 +49,7 @@ into the {body} of the default.hbs template --}}
     $(document).ready(function () {
         var nav = document.querySelector('.site-nav-main .site-nav');
         var feed = document.querySelector('.post-feed');
+        var $body = document.body;
 
         var lastScrollY = window.scrollY;
         var lastWindowHeight = window.innerHeight;
@@ -80,8 +81,10 @@ into the {body} of the default.hbs template --}}
             // show/hide nav
             if (lastScrollY >= trigger - 20) {
                 nav.classList.add('fixed-nav-active');
+                $body.classList.add('toggle-menu-mobile');
             } else {
                 nav.classList.remove('fixed-nav-active');
+                $body.classList.remove('toggle-menu-mobile')
             }
 
             ticking = false;

@@ -4,7 +4,7 @@
             {{#if @site.logo}}
                 <a class="site-nav-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
             {{else}}
-                <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
+                <a class="site-nav-logo gradient-text" href="{{@site.url}}">{{@site.title}}</a>
             {{/if}}
             <div class="site-nav-content">
                 {{#if @site.navigation}}
@@ -35,7 +35,7 @@
                 </ul>
             </div>
         {{else}}
-            <a class="signin-link" href="{{@site.url}}/signin/">Log in</a>
+            <a class="signin-link button small line" href="{{@site.url}}/signin/">Log in</a>
             <a class="button primary small header-cta" href="{{@site.url}}/signup/">Subscribe</a>
         {{/if}}
     </div>
