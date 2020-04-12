@@ -59,6 +59,9 @@
     /* checkout */
     --checkout-bg: #162d43;
 
+    /* Book Mark */
+    --book-mark-border-color: var(--darkmode-400);
+
     /* Prism Cde */
     --prismjs-whitegrey : #e5eff5;
     --prismjs-blue :#3eb0ef;
