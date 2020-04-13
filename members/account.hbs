@@ -67,10 +67,13 @@
 
                     <ul class="subscription-actions">
                         <li><a href="javascript:"
+                                class="button"
                                 data-members-edit-billing
                                 data-members-success="/account/?stripe=billing-update-success"
                                 data-members-cancel="/account/?stripe=billing-update-cancel">Edit billing info</a></li>
-                        <li>{{cancel_link}}</li>
+                        <li>
+                            {{cancel_link class="gh-subscription-cancel button line"}}
+                        </li>
                     </ul>
                 </div>
             {{/foreach}}
