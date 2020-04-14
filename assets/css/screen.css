@@ -648,9 +648,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
         padding-left: 0;
     }
 
-    body.not-fixed-header .site-nav-main {
+    /* body.not-fixed-header .site-nav-main {
         position: relative;
-    }
+    } */
 
     .site-nav-left {
         margin-right: 0;
@@ -670,14 +670,14 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
         display: none !important;
     } */
 
-    body.toggle-menu-mobile .site-nav-main {
+    /* body.toggle-menu-mobile .site-nav-main {
         display: none;
-    }
+    } */
 
-    body.hide-header .site-nav-main {
+    /* body.hide-header .site-nav-main {
         background: transparent;
         border-color: transparent;
-    }
+    } */
 }
 
 
