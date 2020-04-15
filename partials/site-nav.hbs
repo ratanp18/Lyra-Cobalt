@@ -6,7 +6,7 @@
             {{else}}
                 <a class="site-nav-logo gradient-text" href="{{@site.url}}">{{@site.title}}</a>
             {{/if}}
-            <div class="site-nav-content">
+            <div class="site-nav-content site-nav-in-mobile">
                 {{#if @site.navigation}}
                     {{navigation}}
                 {{/if}}
@@ -17,6 +17,11 @@
         </div>
     </div>
     <div class="site-nav-right">
+        {{!-- Toggle Menu --}}
+        <div class="site-nav-toggle-menu js-toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon icon--menu"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path></svg>
+        </div>
+        {{!-- Members --}}
         {{#if @member}}
             <div class="account-menu">
                 <a href="javascript:" class="account-menu-avatar" id="account-menu" type="checkbox" name="menu">

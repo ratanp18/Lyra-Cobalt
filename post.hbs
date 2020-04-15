@@ -219,6 +219,7 @@ $(document).ready(function () {
     var lastScrollY = window.scrollY;
     var lastWindowHeight = window.innerHeight;
     var lastDocumentHeight = $(document).height();
+    var lastWindowWidth = window.innerWidth;
     var ticking = false;
 
     function onScroll() {
@@ -227,6 +228,7 @@ $(document).ready(function () {
     }
 
     function onResize() {
+        lastWindowWidth = window.innerWidth;
         lastWindowHeight = window.innerHeight;
         lastDocumentHeight = $(document).height();
         requestTick();
@@ -245,7 +247,7 @@ $(document).ready(function () {
         var progressMax = lastDocumentHeight - lastWindowHeight;
 
         // show/hide post title
-        if (lastScrollY >= trigger + triggerOffset) {
+        if ((lastScrollY >= trigger + triggerOffset) && lastWindowWidth > 900) {
             nav.classList.add('nav-post-title-active');
         } else {
             nav.classList.remove('nav-post-title-active');

@@ -350,11 +350,11 @@ body {
         height: 100%;
     }
 
-    .site-header-background:not(.responsive-header-img) .site-nav-left:after,
+    /* .site-header-background:not(.responsive-header-img) .site-nav-left:after,
     .site-nav-main .site-nav-left:after {
         right: 10px;
         background: linear-gradient(to right, color(var(--darkgrey) l(-5%) a(0)) 0%,color(var(--darkgrey) l(-5%)) 100%);
-    }
+    } */
 
     .nav li:last-of-type {
         padding-right: 20px;
@@ -506,6 +506,69 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     font-weight: 600;
     text-transform: uppercase;
 }
+
+/* starter - Site nav toggle menu */
+.site-nav-toggle-menu {
+    margin-right: 1rem;
+    padding: 1rem .4rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    .site-nav-toggle-menu {
+        display: block;
+    }
+
+    .site-nav-logo { margin-right: 0; }
+
+    /* .site-header-background:not(.responsive-header-img) .site-nav-left::after, .site-nav-main .site-nav-left::after {
+        display: none;
+    } */
+
+    .nav li a:hover::before {
+        display: none;
+    }
+
+    .site-nav-in-mobile {
+        position: fixed;
+        top: 67px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: color(var(--darkmode-header));
+        padding: .5rem 5vw;
+        visibility: hidden;
+        overflow: hidden;
+        opacity: 0;
+        transition: visibility 0s linear 400ms, opacity 400ms;
+        overflow-y: auto;
+        /* border-bottom: 3px solid var(--header-bottom-color); */
+    }
+
+    .site-nav-in-mobile .nav {
+        position: relative;
+        display: block;
+    }
+
+    /* Show menu */
+    body.has-menu {
+        overflow: hidden;
+    }
+
+    body.has-menu .site-nav-toggle-menu {
+        color: #fff;
+    }
+
+    body.has-menu .site-nav-in-mobile {
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s linear 0s, opacity 400ms;
+    }
+}
+
+/* end ./site-nav-toggle-menu */
 
 .site-nav-right a {
     color: #fff;
@@ -3847,8 +3910,8 @@ form[data-members-form].error .message-error {
 /* Icons */
 .icon {
     display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     vertical-align: middle;
     stroke-width: 0;
     stroke: currentColor;
