@@ -2112,10 +2112,10 @@ Usage (In Ghost editor):
     display: none;
 }
 
-.read-next .post-card-primary-tag {
+/* .read-next .post-card-primary-tag {
     color: #fff;
     opacity: 0.6;
-}
+} */
 
 .read-next .post-card-title {
     color: #fff;
@@ -3139,13 +3139,13 @@ Usage (In Ghost editor):
     text-decoration: none;
 }
 
-.site-footer .copyright a {
+/* .site-footer .copyright a {
     padding: 0 0 0 15px;
 }
 
 .site-footer .copyright a:first-child {
     padding: 0;
-}
+} */
 
 @media (max-width: 740px) {
     .site-footer-content {
@@ -3918,10 +3918,10 @@ form[data-members-form].error .message-error {
     fill: currentColor;
 }
 
-.icon.icon--heart { color: #cc2a2a }
+/* .icon.icon--heart { color: #cc2a2a } */
 
 /* Animated */
-.animated {
+/* .animated {
     animation-duration: 1s;
     animation-fill-mode: both;
 }
@@ -3934,4 +3934,4 @@ form[data-members-form].error .message-error {
     from { transform: scale3d(1, 1, 1); }
     50% { transform: scale3d(1.2, 1.2, 1.2); }
     to { transform: scale3d(1, 1, 1); }
-  }
+  } */
