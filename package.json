@@ -25,6 +25,13 @@
         "email": "hello@ghost.org",
         "url": "https://ghost.org"
     },
+    "contributors": [
+        {
+          "name": "Godo Fredo",
+          "email": "hello@godofredo.ninja",
+          "url": "https://godofredo.ninja"
+        }
+    ],
     "gpm": {
         "type": "theme",
         "categories": [
@@ -39,9 +46,9 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/godofredoninja/Lyra-Stone-Martin.git"
+        "url": "https://github.com/godofredoninja/Lyra-Cobalt.git"
     },
-    "bugs": "https://github.com/godofredoninja/Lyra-Stone-Martin.git/issues",
+    "bugs": "https://github.com/godofredoninja/Lyra-Cobalt.git/issues",
     "devDependencies": {
         "@tryghost/release-utils": "0.6.0",
         "autoprefixer": "9.7.6",
