@@ -12,7 +12,7 @@ Hello :smile: ,Who likes the [Lyra](https://github.com/tryghost/lyra) theme, ple
 
 [![donate](https://user-images.githubusercontent.com/10253167/79540832-66e04680-804e-11ea-9baa-6cdd8cc63a34.gif)](https://www.paypal.me/godofredoninja)
 
-:arrow_right: If you still don't have a **Hosting for your Ghost**. Use [Digital Ocean](https://m.do.co/c/710a27a3b3de) using my [referral link]((https://m.do.co/c/710a27a3b3de)) and you will get free a **$50 credit** to use in [Digital Ocean]((https://m.do.co/c/710a27a3b3de)). This way you will also be helping me.
+:arrow_right: If you still don't have a **Hosting for your Ghost**. Use [Digital Ocean](https://m.do.co/c/710a27a3b3de) using my [referral link]((https://m.do.co/c/710a27a3b3de)) and you will get free a **$100 in credit over 60 days** to use in [Digital Ocean]((https://m.do.co/c/710a27a3b3de)). This way you will also be helping me.
 
 ![screenshot](https://user-images.githubusercontent.com/10253167/79540735-41ebd380-804e-11ea-80b0-6de095c4cb39.jpg)
 
